@@ -1,22 +1,18 @@
 {
-    "name": "Trash session",
-    "description": "a session generator for Trashcore-bot",
-    "logo": "https://files.catbox.moe/2wj395.jpg",
-    "repository": "https://github.com/Tennor-modz/trashcore-sytem",
-    "keywords": ["Trashcore-MD BOT"],
-    "success_url": "/", 
-    "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
-    "env": {      
-      "PORT": {
-        "description": "Port for web app.4000,5000,3000... any!",
-        "value": "5000",
-        "required": false 
-      },
-      "MESSAGE": {
-        "description": "This site is only for session generating",
-        "value": "",
-        "required": false 
-      }
-    }   
-
-}
+    "name": "Trashcore",
+    "description": "A whatsApp bot based on Baileysjs linrary (Ts+Js) with Multi Device support",
+    "repository": "https://github.com/anonphoenix007/CH13",
+    "logo": "https://telegra.ph/file/7aa528767ed96ddc17bc2.jpg",
+    "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+    "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+          }
+     ]
+} 
